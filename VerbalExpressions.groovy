@@ -74,10 +74,9 @@ class VerbalExpressions {
         return this
     }
 
-    VerbalExpressions replace(String source, String value) {
+    String replace(String source, String replacement) {
         this.add( "" )
-        this.source.replaceAll(pattern,value)
-        return this
+        return source.replaceAll(pattern,replacement)
     }
 
     VerbalExpressions lineBreak() {
